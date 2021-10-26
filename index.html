@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/281/281764.png" />
+    <link rel="icon" type="image/png" href="https://cdn-icons.flaticon.com/png/128/720/premium/720255.png?token=exp=1635238761~hmac=0900798aec90a67647720baaf6849ef8" />
     <style>
+
         * {/*** General Settings ***/
             font-family: "Arial", sans-serif;
             font-size: 13px;
         }
         body {/*** General Settings ***/
-            height: 100%;
+            width: 100%;
+            height: 100vh;
             padding: 0;
             margin: 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         nav {/*** Nav Bar Start ***/
             position: absolute;
@@ -23,7 +30,7 @@
         }
         nav ul {
             display: flex;
-            gap: 1.2rem;
+            gap: 12px;
         }
         nav ul li {
             display: flex;
@@ -119,6 +126,8 @@
             display: flex;
             justify-content: center;
             padding-top: 18px;
+
+            flex-grow: 1;
         }
         .btn {
             background-color: #f8f9fa;
@@ -161,15 +170,13 @@
         }/*** Buttons End ***/
 
         footer {/*** Footer Start ***/
-            position: absolute;
-            bottom:0;
-            left: 0;
             width: 100%;
             margin-left: -1rem;
         }
         footer div {
             display: flex;
             justify-content: space-between;
+            padding: 0 20px;
         }
         footer div ul li {
             display: inline-block;
@@ -184,6 +191,40 @@
         footer div ul li a:hover {
             text-decoration: underline;
         }/*** Footer End ***/
+        @media screen and (max-width: 750px){
+
+            .search-bar {
+                width: 360px;
+                height: 36px; 
+            }
+            footer div ul {
+            margin: 0 6px;
+            padding: 0;
+        }
+        footer div ul li a{
+            font-size: small;
+        }
+        footer div {
+            padding: 0 6px;
+        }
+        }
+        @media screen and (max-width: 400px){
+            footer div ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 4px;
+        }
+        .search-bar {
+                width: 280px;
+                height: 36px; 
+            }
+            #google {
+            object-fit: contain;
+            height: 92px;
+            width: 240px;
+        }
+        }
     </style>
 </head>
 <body>
@@ -213,22 +254,23 @@
                 <button class="btn" type="submit">I'm Feeling Lucky</button>
             </form>
         </div>
+        <footer>
+            <div> 
+                <ul>
+                    <li><a href="https://about.google">About</a></li>
+                    <li><a href="https://ads.google.com">Advertising</a></li>
+                    <li><a href="https://smallbusiness.withgoogle.com/">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks">How Search works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms">Terms</a></li>
+                    <li><a href="">Settings</a></li>
+                </ul>
+            </div>
+        </footer>
     </main>
-    <footer>
-        <div> 
-            <ul>
-                <li><a href="https://about.google">About</a></li>
-                <li><a href="https://ads.google.com">Advertising</a></li>
-                <li><a href="https://smallbusiness.withgoogle.com/">Business</a></li>
-                <li><a href="https://www.google.com/search/howsearchworks">How Search works</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://policies.google.com/privacy">Privacy</a></li>
-                <li><a href="https://policies.google.com/terms">Terms</a></li>
-                <li><a href="">Settings</a></li>
-            </ul>
-        </div>
-    </footer>
+    
     <script>
         const searchEl = document.querySelector(".search");
         const form = document.querySelector("#searchform");

@@ -1,0 +1,217 @@
+* {/*** General Settings ***/
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+}
+body {/*** General Settings ***/
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+nav {/*** Nav Bar Start ***/
+    position: absolute;
+    top: 1px;
+    right: 1%;
+}
+nav ul {
+    display: flex;
+    gap: 12px;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+nav ul a:hover {
+    text-decoration: underline;
+}
+nav ul li div {
+    padding: 8px;
+}
+nav ul li div:hover {
+    background-color: #D3E4CD;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#profile {/* Profile Image */
+    background-color: green;
+    padding: 8px;
+    width: 1.2rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apps {/* 9 Dots Image */
+    width: 1.2rem;
+}/*** Nav Bar End ***/
+
+#logo-side {/*** Google Logo Side Start ***/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 350px;
+}
+#google {/* Google Logo */
+    object-fit: contain;
+    height: 92px;
+    width: 272px;
+}/*** Google Logo Side End ***/
+
+input {/*** Search Input Start ***/
+    background-color: transparent;
+    color: rgba(0,0,0,.87);
+    border: none;
+    font-size: 16px;
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    width: 527px;
+    height: 34px;
+    outline: none;
+    margin-left: 3rem;
+    margin-top: 2px;
+}
+.search-bar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 584px;
+    min-height: 44px;
+    height: 44px;
+    margin-top: 2.2rem;
+    padding: 1px 2px;
+    border-radius: 2rem;
+    margin-left: auto;/* Sets as centered */
+    margin-right: auto;/* Sets as centered */
+}
+.search-bar:hover, .search-bar:active {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+#magnifying-glass {/*** Magnifying Glass ***/
+    width: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -24px;
+    margin-left: 16px;
+}/*** Search Input End ***/
+.buttons {/*** Buttons Start ***/
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+
+    flex-grow: 1;
+}
+.btn {
+    background-color: #f8f9fa;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    border-top-color: rgb(248, 249, 250);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(248, 249, 250);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(248, 249, 250);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(248, 249, 250);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    user-select: none;
+    
+}
+.btn:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}/*** Buttons End ***/
+
+footer {/*** Footer Start ***/
+    width: 100%;
+    margin-left: -1rem;
+}
+footer div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+footer div ul li {
+    display: inline-block;
+    margin: 0 1rem;
+
+}
+footer div ul li a {
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;    
+}
+footer div ul li a:hover {
+    text-decoration: underline;
+}/*** Footer End ***/
+@media screen and (max-width: 750px){
+    .search-bar {
+        width: 360px;
+        height: 36px; 
+    }
+    footer div ul {
+    margin: 0 6px;
+    padding: 0;
+    }
+    footer div ul li a{
+        font-size: small;
+    }
+    footer div {
+        padding: 0 6px;
+    }
+}
+@media screen and (max-width: 400px){
+    footer div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 4px;
+    }
+    .search-bar {
+            width: 280px;
+            height: 44px; 
+        }
+    #google {
+        object-fit: contain;
+        height: 92px;
+        width: 240px;
+        }
+}

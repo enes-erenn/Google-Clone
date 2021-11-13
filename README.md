@@ -14,12 +14,16 @@
            
 <h4 align="center">820x1180 Screen Size</h4>
 
-![alt text](https://raw.githubusercontent.com/thenesern/Google-Clone/master/images/820x1180/2.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/thenesern/Google-Clone/master/images/820x1180/2.png" />
+</p>
 
 ---
 
 <h4 align="center">375x812 Screen Size</h4>
 
-![alt text](https://raw.githubusercontent.com/thenesern/Google-Clone/master/images/375x812/3.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/thenesern/Google-Clone/master/images/375x812/3.png" />
+</p>
            
 ----

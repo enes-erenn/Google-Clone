@@ -5,10 +5,10 @@
 ----
 
 <h4 align="center>1280x800 Screen Size</h4>
-![alt text](https://github.com/thenesern/Google-Clone/blob/master/images/1.png)
+![alt text](https://github.com/thenesern/Google-Clone/blob/master/images/1.png?raw=true)
 
 <h4 align="center>820x1180 Screen Size</h4>
-![alt text](https://github.com/thenesern/Google-Clone/blob/master/images/2.png)
+![alt text](https://github.com/thenesern/Google-Clone/blob/master/images/2.png?raw=true)
 
 <h4 align="center>375x812 Screen Size</h4>
-![alt text](https://github.com/thenesern/Google-Clone/blob/master/images/3.png)
+![alt text](https://github.com/thenesern/Google-Clone/blob/master/images/3.png?raw=true)

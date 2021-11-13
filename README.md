@@ -4,17 +4,17 @@
 
 ---
 
-<h4 align="center>1280x800 Screen Size</h4>
+<h4 align="center">1280x800 Screen Size</h4>
 ![alt text](https://raw.githubusercontent.com/thenesern/Google-Clone/master/images/1280x800/1.png)
            
 ---
            
-<h4 align="center>820x1180 Screen Size</h4>
+<h4 align="center">820x1180 Screen Size</h4>
 ![alt text](https://raw.githubusercontent.com/thenesern/Google-Clone/master/images/820x1180/2.png)
 
 ---
 
-<h4 align="center>375x812 Screen Size</h4>
+<h4 align="center">375x812 Screen Size</h4>
 ![alt text](https://raw.githubusercontent.com/thenesern/Google-Clone/master/images/375x812/3.png)
            
 ----
